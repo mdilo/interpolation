@@ -2,9 +2,9 @@ function [M] = NaturalSpline(n,xValue,a)
 
 %Here M is the table of a,b,c,and d coefficients
     % n is the number of intervals in the array of x-values 
-    %(NOTE: use n = 1 here, as MATLAB indexes starting at 1 not zero) 
+    %(NOTE: use n-1 = 1 here, as MATLAB indexes starting at 1 not zero) 
     % xValue input is an array of x-values to be used for the spline
-    % a is the corresponding array of y-values (as f(x))
+    % y is the corresponding array of y-values (as f(x))
 
 
     for i = 1:n-1
